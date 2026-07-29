@@ -7,6 +7,10 @@
 body{
     background-color:#9b989b;
     font-family:"Montserrat", sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -14,7 +18,7 @@ body{
 header{
     margin:20px;
     padding:15px 40px;
-    background-color:#6b686b;
+    background-color:#000000;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -103,7 +107,6 @@ nav a:hover{
 
 
 .fondo-servicios{
-
     background-image:
     linear-gradient(
         rgba(0,0,0,.55),
@@ -114,12 +117,10 @@ nav a:hover{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    background-attachment:fixed;
 
     padding-bottom:60px;
+    flex:1;
 }
-
-
 
 
 .pagina-servicios h1{
@@ -179,7 +180,7 @@ nav a:hover{
     width:350px;
 
     background-color:
-    rgba(255,255,255,.85);
+    rgba(2, 2, 2, 0.85);
 
     backdrop-filter:blur(5px);
 
@@ -203,7 +204,7 @@ nav a:hover{
     transform:translateY(-10px);
 
     box-shadow:
-    0 20px 35px rgba(0,0,0,.45);
+    0 20px 35px rgba(7, 7, 7, 0.45);
 
 }
 
@@ -221,7 +222,7 @@ nav a:hover{
 
     border-radius:15px;
 
-    border:5px solid #aaa;
+    border:5px solid #000000;
 
 }
 
@@ -229,7 +230,7 @@ nav a:hover{
 
 .card h3{
 
-    color:#333;
+    color:#f7f4f4;
 
     font-size:28px;
 
@@ -643,82 +644,8 @@ footer{
     padding:15px;
 
     font-size:18px;
-
-}
-
-
-@media(max-width:768px){
-
-
-header{
-
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-
-header h2{
-
-    font-size:28px;
-
-}
-
-
-nav ul{
-
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-
-
-.hero h1{
-
-    font-size:45px;
-
-}
-
-
-.hero p{
-
-    font-size:25px;
-
-}
-
-
-
-.card{
-
-    width:90%;
-
-}
-
-
-
-.pagina-servicios h1{
-
-    font-size:40px;
-
-}
-
-
-.galeria h1{
-
-    font-size:40px;
-
-}
-
-
-.estadisticas{
-
-    gap:40px;
-
-}
-
+    
+    margin-top: auto;
 
 }
 
@@ -813,85 +740,97 @@ body{
 }
 
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-    header{
-        flex-direction:column;
-        gap:20px;
-        text-align:center;
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 
-    .logo-img{
-        width:80px;
-        margin:0;
+    .logo-img {
+        width: 80px;
+        margin: 0;
     }
 
-    .logo-text{
-        width:auto;
-        font-size:24px;
+    .logo-text {
+        width: auto;
+        font-size: 24px;
     }
 
-    nav{
-        width:100%;
+    header h2 {
+        font-size: 28px;
     }
 
-    nav ul{
-        flex-direction:column;
-        gap:12px;
+    nav {
+        width: 100%;
     }
 
-    .hero{
-        height:60vh;
-        padding:40px 20px;
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .hero h1{
-        font-size:20px;
+    .hero {
+        height: 60vh;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
         line-height: 1.2;
     }
 
-    .hero p{
-        font-size:18px;
-        max-width:320px;
-        margin:15px auto 0;
-        line-height:1.5;
+    .hero p {
+        font-size: 25px;
+        max-width: 320px;
+        margin: 15px auto 0;
+        line-height: 1.5;
     }
 
-    .contenedor-cards{
-        flex-direction:column;
-        align-items:center;
+    .contenedor-cards {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .card{
-        width:95%;
+    .card {
+        width: 90%;
     }
 
-    .card img{
-        height:220px;
+    .card img {
+        height: 220px;
     }
 
-    .contenedor-ventajas{
-        flex-direction:column;
-        align-items:center;
+    .contenedor-ventajas {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .estadisticas{
-        flex-direction:column;
-        gap:30px;
+    .estadisticas {
+        gap: 40px;
+        flex-direction: column;
     }
 
-    .contenedor-zonas{
-        flex-direction:column;
-        align-items:center;
+    .contenedor-zonas {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .Contacto form{
-        width:90%;
+    .Contacto form {
+        width: 90%;
     }
 
     .Contacto h2 {
         font-size: 40px;
         margin-bottom: 30px;
+    }
+
+    .pagina-servicios h1 {
+        font-size: 40px;
+    }
+
+    .galeria h1 {
+        font-size: 40px;
     }
 
 }
