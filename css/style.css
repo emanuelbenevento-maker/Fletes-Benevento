@@ -846,7 +846,7 @@ body{
     }
 
     .hero h1{
-        font-size:25px;
+        font-size:20px;
         line-height: 1.2;
     }
 
@@ -886,7 +886,7 @@ body{
     }
 
     .Contacto form{
-        width:95%;
+        width:90%;
     }
 
 }
