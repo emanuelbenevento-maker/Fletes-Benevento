@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto fletes Benevento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="Contacto">
+        
+        <h2>Contacto</h2>
+        <p>Completa el siguiente formulario y nos comunicaremos a la brevedad</p>
+
+        <form>
+                 <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="telefono">Teléfono:</label><br>
+                <input type="number" id="telefono" name="telefono"><br><br>
+
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea><br><br>
+                
+                <label for="motivo">Motivo de contacto:</label><br>
+
+                <Select id="motivo" name="motivo">
+
+                    <option value="">Seleccione una opcion</option>
+                    <option value="Cotizacion">Solicitar una cotizacion</option>
+                    <option value="Consulta">Realizar una consulta</option>
+                    <option value="Reclamo">Realizar un reclamo</option>
+                
+                </Select>
+                
+            <label>¿Necesitás el servicio con urgencia?</label><br>
+
+            <input type="radio" id="si" name="urgencia" value="si">
+            <label for="si">Sí</label>
+
+            <input type="radio" id="no" name="urgencia" value="no">
+            <label for="no">No</label>
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+               
+                
+
+        </form>
+
+        
+    </section>
+    
+</body>
+</html>
