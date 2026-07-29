@@ -822,13 +822,13 @@ body{
     }
 
     .logo-img{
-        width:100px;
+        width:80px;
         margin:0;
     }
 
     .logo-text{
         width:auto;
-        font-size:30px;
+        font-size:24px;
     }
 
     nav{
@@ -837,20 +837,24 @@ body{
 
     nav ul{
         flex-direction:column;
-        gap:15px;
+        gap:12px;
     }
 
     .hero{
-        height:auto;
-        padding:80px 20px;
+        height:60vh;
+        padding:40px 20px;
     }
 
     .hero h1{
-        font-size:45px;
+        font-size:25px;
+        line-height: 1.2;
     }
 
     .hero p{
-        font-size:22px;
+        font-size:18px;
+        max-width:320px;
+        margin:15px auto 0;
+        line-height:1.5;
     }
 
     .contenedor-cards{
@@ -863,7 +867,7 @@ body{
     }
 
     .card img{
-        height:250px;
+        height:220px;
     }
 
     .contenedor-ventajas{
@@ -873,7 +877,7 @@ body{
 
     .estadisticas{
         flex-direction:column;
-        gap:40px;
+        gap:30px;
     }
 
     .contenedor-zonas{
